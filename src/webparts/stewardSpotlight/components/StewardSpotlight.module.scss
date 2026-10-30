@@ -1,0 +1,150 @@
+// Colors and sizes taken from the reference design (images/ui_sample.jpeg).
+$cardRadius: 24px;
+$profileWidth: 200px;
+$tabletBreakpoint: 900px;
+$mobileBreakpoint: 600px;
+
+.stewardSpotlight {
+  box-sizing: border-box;
+  padding: 32px 40px 40px;
+  background: linear-gradient(135deg, #1f1b43 0%, #14246e 100%);
+  color: #ffffff;
+  font-family: 'Manrope', 'Segoe UI', 'Segoe UI Web (West European)', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+
+// Heading on the left, "Nominate" button on the right. Wraps on small screens.
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px 24px;
+  margin-bottom: 20px;
+}
+
+.headings {
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.nominate {
+  flex: 0 0 auto;
+}
+
+// Light card: profile panel on the left, text on the right.
+.card {
+  display: flex;
+  min-height: 280px;
+  overflow: hidden;
+  border-radius: $cardRadius;
+  background-color: #f6f7fb;
+  color: #1f2430;
+}
+
+.profile {
+  flex: 0 0 $profileWidth;
+  width: $profileWidth;
+}
+
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 32px 40px 28px;
+}
+
+.description {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.75;
+  color: #2b2f3a;
+  // Keep line breaks the editor typed in the multiline property pane field.
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.readMore {
+  align-self: flex-end;
+  margin-top: 24px;
+}
+
+// Tablet: slightly smaller text and spacing.
+@media (max-width: $tabletBreakpoint) {
+  .stewardSpotlight {
+    padding: 28px 24px 32px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .content {
+    padding: 24px 28px 24px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+}
+
+// Mobile: stack the card, and make the buttons easy to tap.
+@media (max-width: $mobileBreakpoint) {
+  .stewardSpotlight {
+    padding: 24px 16px 28px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .profile {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .content {
+    padding: 20px 20px 24px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .readMore {
+    align-self: stretch;
+
+    > * {
+      width: 100%;
+    }
+  }
+}

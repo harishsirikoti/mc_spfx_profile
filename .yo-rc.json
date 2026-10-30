@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "steward-spotlight",
+    "environment": "spo",
+    "skipFeatureDeployment": true,
+    "useGulp": false,
+    "componentType": "webpart",
+    "template": "react",
+    "componentName": "StewardSpotlight",
+    "componentDescription": "Steward Spotlight web part",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.23.3",
+    "sdksVersions": {},
+    "version": "1.24.0",
+    "libraryName": "steward-spotlight",
+    "libraryId": "0b430c76-bc11-4170-8d00-44273440e673",
+    "packageManager": "npm",
+    "solutionShortDescription": "steward-spotlight description"
+  }
+}

@@ -1,0 +1,65 @@
+// Dark blue profile panel on the left side of the spotlight card.
+$panelBlue: #13286a;
+$accentOrange: #e8672a;
+$jobTitleBlue: #6fb0ff;
+
+.employeeProfile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $panelBlue;
+  color: #ffffff;
+}
+
+// The photo takes all free height, so the name panel keeps a fixed size.
+.photoArea {
+  flex: 1 1 auto;
+  min-height: 160px;
+  overflow: hidden;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fallbackAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(160deg, #2c4a9e 0%, #17317d 100%);
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+// Thin orange line between the photo and the name, as in the design.
+.accentLine {
+  width: 60%;
+  height: 3px;
+  margin-left: 12px;
+  background-color: $accentOrange;
+}
+
+.details {
+  padding: 14px 16px 16px;
+}
+
+.displayName {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.jobTitle {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.3;
+  color: $jobTitleBlue;
+}

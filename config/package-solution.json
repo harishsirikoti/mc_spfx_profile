@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "steward-spotlight-client-side-solution",
+    "id": "0b430c76-bc11-4170-8d00-44273440e673",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "steward-spotlight description"
+      },
+      "longDescription": {
+        "default": "steward-spotlight description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "steward-spotlight Feature",
+        "description": "The feature that activates elements of the steward-spotlight solution.",
+        "id": "fab2674e-e396-48a6-9780-024194056d43",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/steward-spotlight.sppkg"
+  }
+}
