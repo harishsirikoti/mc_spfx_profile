@@ -59,7 +59,7 @@ export default class StewardSpotlightWebPart extends BaseClientSideWebPart<IStew
         profileService: this._profileService
       }
     );
-
+    //root
     if (!this._root) {
       this._root = createRoot(this.domElement);
     }
