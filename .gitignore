@@ -14,7 +14,15 @@ lib-commonjs
 lib-esm
 jest-output
 release
-solution/solution/debug
+# Ignore SPFx build and debug files
+/sharepoint/solution/debug/
+
+# Ignore generated solution files
+/sharepoint/solution/*
+
+# Allow the SharePoint deployment package
+!/sharepoint/solution/*.sppkg
+images
 temp
 *.sppkg
 .heft
