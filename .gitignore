@@ -4,40 +4,35 @@ logs
 npm-debug.log*
 
 # Dependency directories
-node_modules
+node_modules/
 
 # Build generated files
-dist
-lib
-lib-dts
-lib-commonjs
-lib-esm
-jest-output
-release
-# Ignore SPFx build and debug files
-/sharepoint/solution/debug/
-
-# Ignore generated solution files
-/sharepoint/solution/*
-
-# Allow the SharePoint deployment package
-!/sharepoint/solution/*.sppkg
-/images
-temp
+dist/
+lib/
+lib-dts/
+lib-commonjs/
+lib-esm/
+jest-output/
+release/
+solution/
+temp/
 *.sppkg
-.heft
+.heft/
+
+# Reference images
+/images/
 
 # Coverage directory used by tools like istanbul
-coverage
+coverage/
 
 # OSX
 .DS_Store
 
 # Visual Studio files
 .ntvs_analysis.dat
-.vs
-bin
-obj
+.vs/
+bin/
+obj/
 
 # Resx Generated Code
 *.resx.ts
