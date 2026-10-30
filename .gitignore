@@ -22,7 +22,7 @@ release
 
 # Allow the SharePoint deployment package
 !/sharepoint/solution/*.sppkg
-images
+/images
 temp
 *.sppkg
 .heft
