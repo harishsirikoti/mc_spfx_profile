@@ -39,3 +39,7 @@ obj/
 
 # Styles Generated Code
 *.scss.ts
+
+# Allow deployment packages inside zipfiles
+!/zipfiles/
+!/zipfiles/**
